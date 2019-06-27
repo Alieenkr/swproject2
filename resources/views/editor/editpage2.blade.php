@@ -359,6 +359,7 @@
 						</div>
 						@endif
                     <div id="source" ></div>
+                    @if(Auth::check())
 					<nav class="navbar fixed-bottom">
 					<div class="play-btns">
                         <button type="button" class="btn btn-success btn-lg" onclick="execute()">실행</button>
@@ -381,6 +382,8 @@
                             게시판저장
                         </button>
                     </div>
+                    </nav>
+                    @endif
                 </form>
 
             </div>
